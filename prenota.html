@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenota una Consulenza - Studio Dietologico NutriSalute</title>
+    <meta name="description" content="Compila il modulo per prenotare la tua prima visita o una consulenza di controllo presso il nostro studio.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><span>Dr</span>Davide<span>Mazzola</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+                    <li class="nav-item"><a href="servizi.html" class="nav-link">Servizi</a></li>
+                    <li class="nav-item"><a href="contatti.html" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Apri menu">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title animate-on-scroll">Prenota la Tua Consulenza</h1>
+                <p class="section-subtitle animate-on-scroll">Compila il modulo sottostante per richiedere un appuntamento. Ti ricontatteremo al più presto per confermare la tua prenotazione.</p>
+                
+                <div class="form-container animate-on-scroll">
+                    <form id="booking-form" novalidate>
+                        <div class="form-group">
+                            <label for="nome">Nome e Cognome</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Es. Mario Rossi">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Indirizzo Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Es. mario.rossi@email.com">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Numero di Telefono</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Es. 3331234567">
+                             <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo_visita">Tipo di Visita</label>
+                            <select id="tipo_visita" name="tipo_visita" required>
+                                <option value="">Seleziona un'opzione...</option>
+                                <option value="prima_visita">Prima Visita (in studio)</option>
+                                <option value="controllo">Visita di Controllo (in studio)</option>
+                                <option value="online">Consulenza Online</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="data">Data Preferita</label>
+                            <input type="date" id="data" name="data" required>
+                             <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="orario">Orario Preferito</label>
+                            <select id="orario" name="orario" required>
+                                <option value="">Seleziona un orario...</option>
+                                <option value="mattina">Mattina (9:00 - 12:00)</option>
+                                <option value="pomeriggio">Pomeriggio (15:00 - 19:00)</option>
+                            </select>
+                             <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Note Aggiuntive</label>
+                            <textarea id="note" name="note" placeholder="Indica qui eventuali richieste o informazioni utili..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Invia Richiesta</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+         <div class="container footer-container">
+            <div class="footer-col">
+                <h4>Studio NutriSalute</h4>
+                <p>Il tuo partner per un'alimentazione sana e consapevole. Raggiungi i tuoi obiettivi con il nostro supporto.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Link Utili</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contatti</h4>
+                <p>Via del Benessere 12, 00100 Roma</p>
+                <p>Email: <a href="mailto:info@nutrisalute.it">info@nutrisalute.it</a></p>
+                <p>Tel: <a href="tel:+390123456789">+39 012 345 6789</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Studio NutriSalute. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
