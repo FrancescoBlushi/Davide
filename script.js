@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Chiamata all'endpoint GET /api/disponibilita
-                const response = await fetch(`http://localhost:8080/api/disponibilita?data=${selectedDate}`);
+                const response = await fetch(`/api/disponibilita?data=${selectedDate}`);
                 
                 if (!response.ok) {
                     throw new Error('Errore nel recupero degli orari.');
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Chiamata all'endpoint POST /api/prenotazioni
-                const response = await fetch('http://localhost:8080/api/prenotazioni', {
+                const response = await fetch('/api/prenotazioni', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
